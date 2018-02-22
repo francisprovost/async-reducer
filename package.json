@@ -1,6 +1,6 @@
 {
   "name": "redu-async",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Adds the possibility to add recuder asynchronously to your redux store",
   "main": "index.js",
   "scripts": {
