@@ -21,16 +21,12 @@ describe('Redux Store', () => {
         store = createStore((state) => state);
     });
 
-    it('should be an empty store', () => {
-        expect(store.getState()).to.equal(undefined);
-    });
-
     describe('should add one reducer', () => {
         beforeEach(() => {
             addReducer(store, 'profile', profileReducer);
         });
 
-        it('store should be initialized empty', () => {
+        it('store should be initialized with initial state', () => {
             expect(store.getState()).to.deep.equal({
                 profile: {}
             });
@@ -47,7 +43,7 @@ describe('Redux Store', () => {
             addReducer(store, 'cart', cartReducer);
         });
 
-        it('store should be initialized empty', () => {
+        it('store should be initialized with initial state', () => {
             expect(store.getState()).to.deep.equal({
                 profile: {},
                 cart: {}
