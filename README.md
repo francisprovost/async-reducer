@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/francisprovost/async-reducer.svg?branch=master)](https://travis-ci.org/francisprovost/async-reducer)
+
 # async-reducer
 Adds the possibility to add recuder asynchronously to your #redux store
 
