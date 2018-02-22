@@ -1,5 +1,5 @@
 {
-  "name": "async-reducer",
+  "name": "redu-async",
   "version": "1.0.0",
   "description": "Adds the possibility to add recuder asynchronously to your redux store",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "clean": "npx rimraf dist",
     "test": "npx mocha tests/** --require babel-core/register"
   },
-  "repository": "git+https://github.com/francisprovost/async-reducer.git",
+  "repository": "git+https://github.com/francisprovost/redu-async.git",
   "keywords": [
     "redux",
     "react"
@@ -16,9 +16,9 @@
   "author": "Francis Provost",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/francisprovost/async-reducer/issues"
+    "url": "https://github.com/francisprovost/redu-async/issues"
   },
-  "homepage": "https://github.com/francisprovost/async-reducer#readme",
+  "homepage": "https://github.com/francisprovost/redu-async#readme",
   "engines": {
     "npm": ">=5.2.0"
   },

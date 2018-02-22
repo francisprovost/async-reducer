@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/francisprovost/async-reducer.svg?branch=master)](https://travis-ci.org/francisprovost/async-reducer)
 
-# async-reducer
+# redu-async
 Adds the possibility to add recuder asynchronously to your #redux store
 
 ## Installation
@@ -15,6 +15,6 @@ Adds the possibility to add recuder asynchronously to your #redux store
 ``` js
 import addReducer from 'async-reducer';
 
-asyncReducer(yourStore, 'TheReducerName', yourReducer);
+addReducer(yourStore, 'TheReducerName', yourReducer);
 
 ```
