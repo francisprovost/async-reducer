@@ -30,9 +30,10 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
     "mocha": "^5.0.1",
-    "prettier-eslint": "^8.7.4"
-  },
-  "dependencies": {
+    "prettier-eslint": "^8.7.4",
     "redux": "^3.7.2"
+  },
+  "peerDependencies": {
+    "redux": ">=3.7.2"
   }
 }
