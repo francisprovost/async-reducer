@@ -15,6 +15,22 @@ function testAddNameReducer(store) {
     });
 }
 
+function testAddItemReducer(store) {
+    const item = {
+        id: 'this-is-an-id',
+        description: 'some description'
+    };
+
+    store.dispatch({
+        type: 'ADD_ITEM',
+        item
+    });
+
+    expect(store.getState().cart).to.deep.equal({
+        items: [item]
+    });
+}
+
 describe('Redux Store', () => {
     let store;
     beforeEach(() => {
@@ -52,19 +68,7 @@ describe('Redux Store', () => {
 
         it('should dispatch the `ADD_NAME` & `ADD_ITEM` action', () => {
             testAddNameReducer(store);
-
-            const item = {
-                id: 'this-is-an-id',
-                description: 'some description'
-            };
-            store.dispatch({
-                type: 'ADD_ITEM',
-                item
-            });
-
-            expect(store.getState().cart).to.deep.equal({
-                items: [item]
-            });
+            testAddItemReducer(store);
         });
     });
 });
