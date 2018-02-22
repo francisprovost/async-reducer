@@ -5,7 +5,7 @@ Adds the possibility to add recuder asynchronously to your #redux store
 
 ## Installation
 
-`npm i --save async-reduxer`
+`npm i --save redu-async`
 
 ## Usage
 
@@ -13,7 +13,7 @@ Adds the possibility to add recuder asynchronously to your #redux store
 - Keep your redux store so you can access the same reference wherever you need it. (i.e.: A singleton)
 
 ``` js
-import addReducer from 'async-reducer';
+import addReducer from 'redu-async ';
 
 addReducer(yourStore, 'TheReducerName', yourReducer);
 
