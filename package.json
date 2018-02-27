@@ -2,7 +2,10 @@
   "name": "redu-async",
   "version": "1.0.1",
   "description": "Adds the possibility to add recuder asynchronously to your redux store",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "npm run clean && npx babel index.js -d dist",
     "clean": "npx rimraf dist",
