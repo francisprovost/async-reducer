@@ -1,6 +1,6 @@
 import { createStore } from 'redux';
 import { expect } from 'chai';
-import addReducer from '../index';
+import { addReducer, addReducers } from '../index';
 import profileReducer from './reducers/profile.reducer';
 import cartReducer from './reducers/cart.reducer';
 
@@ -69,6 +69,17 @@ describe('Redux Store', () => {
         it('should dispatch the `ADD_NAME` & `ADD_ITEM` action', () => {
             testAddNameReducer(store);
             testAddItemReducer(store);
+        });
+    });
+
+    it('should add multiple reducers at once', () => {
+        addReducers(store, {
+            profile: profileReducer,
+            cart: cartReducer
+        });
+        expect(store.getState()).to.deep.equal({
+            profile: {},
+            cart: {}
         });
     });
 });
